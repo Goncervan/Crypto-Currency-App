@@ -1,0 +1,74 @@
+.principal{
+    width: 95%;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    backdrop-filter: blur(5px);
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: start;
+    -webkit-box-shadow: 5px 5px 20px 0 #000000; 
+    box-shadow: 5px 5px 20px 0 #000000;
+}
+.img{
+    width: 8%;
+}
+.name{
+    width: 20%;
+    font-size: 25px;
+}
+
+.symbol{
+    width: 10%;
+    color: #8d8d8d;
+}
+
+.precio{
+    width: 22%;
+}
+
+.positive{
+    width: 10%;
+    color: rgb(0, 255, 0);
+}
+.negative{
+    width: 10%;
+    color: rgb(255, 0, 0);
+}
+
+.volumen{
+    width: 25%;
+}
+
+
+@media (max-width: 575px) {
+    .principal{
+        flex-direction: column;
+        width: 95%;
+        height: 140px;
+        text-align: center;
+        align-items: flex-end;
+        padding-right: 20px;
+        line-break:strict;
+    }
+    .img{
+        position: absolute;
+        left: 5px;
+        top: 35px;
+        width: 70px;
+    }
+    .positive, .negative, .precio, .name, .volumen, .symbol{
+        width: auto;
+    }
+    .name{
+        align-self: center;
+    }
+}
+@media (max-width: 991.98px) {
+    .name{
+        font-size: 18px;
+    }
+}
